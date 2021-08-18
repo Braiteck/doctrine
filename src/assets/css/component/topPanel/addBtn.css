@@ -1,0 +1,169 @@
+.top_panel .add
+{
+    position: relative;
+}
+
+
+.top_panel .add .btn
+{
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+
+    position: relative;
+    z-index: 101;
+
+    display: flex;
+
+    width: 135px;
+    height: 48px;
+
+    transition: .2s linear;
+    text-align: center;
+
+    border-radius: 4px;
+    background: #7a76ff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.top_panel .add .btn .icon
+{
+    position: relative;
+
+    display: block;
+
+    width: 11px;
+    height: 1px;
+    margin-right: 7px;
+
+    transition: background .2s linear;
+
+    background: #fff;
+}
+
+.top_panel .add .btn .icon:before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 1px;
+    height: 11px;
+    margin: auto;
+
+    content: '';
+    transition: opacity .2s linear;
+
+    background: #fff;
+}
+
+
+.top_panel .add .btn:hover
+{
+    background: #6a66e8;
+}
+
+
+.top_panel .add .btn.active
+{
+    color: #000;
+
+    background: transparent;
+}
+
+.top_panel .add .btn.active .icon
+{
+    background: #7a76ff;
+}
+
+.top_panel .add .btn.active .icon:before
+{
+    opacity: 0;
+}
+
+
+.top_panel .add .dropdown
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    min-width: 100%;
+    padding-top: 48px;
+
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+.top_panel .add .dropdown > *
+{
+    color: var(--text_color);
+    font-size: 13px;
+    line-height: 13px;
+
+    display: flex;
+
+    width: 100%;
+    min-height: 42px;
+    padding: 14px 20px;
+
+    transition: .2s linear;
+    text-decoration: none;
+
+    background: #fcfcfe;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.top_panel .add .dropdown > * .icon
+{
+    display: block;
+
+    margin-right: 10px;
+
+    fill: currentColor;
+}
+
+.top_panel .add .dropdown > * .ic_course
+{
+    width: 12px;
+    height: 12px;
+}
+
+.top_panel .add .dropdown > * .ic_lesson
+{
+    width: 12px;
+    height: 13px;
+}
+
+
+.top_panel .add .dropdown > *:hover
+{
+    color: #7a76ff;
+
+    background: #f2f1ff;
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .top_panel .add
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+/*---------------
+    Load more
+---------------*/
+.load_more
+{
+    margin-top: 24px;
+}
+
+.load_more button
+{
+    color: #7a76ff;
+    font-size: 15px;
+    line-height: 15px;
+
+    width: 100%;
+    padding: 20px;
+
+    transition: .2s linear;
+    text-align: center;
+
+    border-radius: 12px;
+    background: #f2f1ff;
+}
+
+.load_more button:hover
+{
+    color: #fff;
+
+    background: #7a76ff;
+}
+
+
+
+.user_notes .load_more
+{
+    margin-top: 0;
+    padding: 24px;
+}
+
+.user_notes .tabs .load_more
+{
+    padding: 18px 18px 24px;
+}

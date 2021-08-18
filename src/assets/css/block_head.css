@@ -1,0 +1,255 @@
+/*---------------
+    Block head
+---------------*/
+.block_head
+{
+    display: flex;
+
+    margin-bottom: 24px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.block_head.bg
+{
+    margin: -36px -70px 32px -36px;
+    padding: 24px 70px 24px 36px;
+
+    background: #fff;
+    box-shadow: 0 12px 48px rgba(204, 214, 248, .3);
+}
+
+
+.block_head .back_link
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+
+    margin-bottom: 5px;
+}
+
+.block_head .back_link a
+{
+    color: #969bb4;
+
+    display: flex;
+
+    transition: color .2s linear;
+    text-decoration: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.block_head .back_link .icon
+{
+    position: relative;
+    top: 1px;
+
+    display: block;
+
+    width: 12px;
+    height: 7px;
+    margin-right: 12px;
+
+    fill: currentColor;
+}
+
+.block_head .back_link a:hover
+{
+    color: #7a76ff;
+}
+
+
+.block_head .title
+{
+    font-size: 24px;
+    line-height: 24px;
+
+    display: flex;
+
+    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.block_head .title .icon
+{
+    display: block;
+
+    margin-right: 10px;
+
+    fill: #969bb4;
+}
+
+.block_head .title span
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+
+    position: relative;
+
+    margin-left: 8px;
+}
+
+
+.block_head .desc
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+.block_head .invite_btn
+{
+    color: #fff;
+    font-size: 13px;
+    line-height: 13px;
+
+    display: flex;
+
+    width: 148px;
+    height: 48px;
+
+    transition: background .2s linear;
+
+    border-radius: 4px;
+    background: #7a76ff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.block_head .invite_btn .icon
+{
+    display: block;
+
+    width: 14px;
+    height: 15px;
+    margin-right: 9px;
+
+    fill: #e4e4ff;
+}
+
+.block_head .invite_btn:hover
+{
+    background: #6a66e8;
+}
+
+
+
+.block_head .search
+{
+    width: 315px;
+    max-width: 100%;
+    margin: 0;
+}
+
+
+
+@media (max-width: 1439px)
+{
+    .block_head .title
+    {
+        font-size: 22px;
+    }
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+    .block_head.bg
+    {
+        margin: 0 0 32px 0;
+        padding: 0;
+
+        background: none;
+        box-shadow: none;
+    }
+
+    .block_head .title
+    {
+        font-size: 24px;
+    }
+
+    .block_head .search
+    {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+    .block_head .title
+    {
+        font-size: 21px;
+        line-height: 21px;
+    }
+
+    .block_head .title span
+    {
+        line-height: 21px;
+    }
+
+    .block_head .title br
+    {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .block_head .title
+    {
+        font-size: 21px;
+        line-height: 27px;
+    }
+
+    .block_head .title span
+    {
+        line-height: 27px;
+    }
+
+
+    .block_head .invite_btn
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+}

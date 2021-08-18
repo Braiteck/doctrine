@@ -1,0 +1,722 @@
+.accordion
+{
+    counter-reset: item;
+}
+
+.accordion .item
+{
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+.accordion .item + .item
+{
+    margin-top: 22px;
+}
+
+
+.accordion .head
+{
+    position: relative;
+
+    display: flex;
+
+    padding: 18px;
+
+    cursor: pointer;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.accordion .head:before
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+
+    width: 24px;
+    height: 24px;
+    margin: auto;
+
+    content: counters(item, '') '';
+    counter-increment: item;
+    transition: color .2s linear;
+    text-align: center;
+    pointer-events: none;
+
+    border-radius: 50%;
+    background: #f9f9fc;
+}
+
+
+.accordion .head .info
+{
+    display: flex;
+
+    width: 100%;
+    margin-left: -18px;
+
+    pointer-events: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.accordion .head .info > *
+{
+    margin-left: 18px;
+}
+
+.accordion .head .info .title
+{
+    width: calc(100% + 18px);
+}
+
+
+.accordion .head .title
+{
+    font-size: 18px;
+    line-height: 18px;
+
+    width: 100%;
+
+    transition: color .2s linear;
+    pointer-events: none;
+}
+
+
+.accordion .head .lessons_count
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+
+    display: flex;
+
+    margin-top: 8px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.accordion .head .lessons_count .icon
+{
+    position: relative;
+    top: -1px;
+
+    display: block;
+
+    width: 12px;
+    height: 13px;
+    margin-right: 8px;
+
+    fill: #b4b8cf;
+}
+
+
+.accordion .edit_btn
+{
+    display: flex;
+
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    margin-left: 16px;
+
+    transition: .2s linear;
+
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(167, 177, 210, .3);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.accordion .edit_btn .icon
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    transition: fill .2s linear;
+
+    fill: #7a76ff;
+}
+
+.accordion .edit_btn:hover
+{
+    background: #7a76ff;
+}
+
+.accordion .edit_btn:hover .icon
+{
+    fill: #fff;
+}
+
+
+.accordion .del_btn
+{
+    display: flex;
+
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    margin-left: 16px;
+
+    transition: .2s linear;
+
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(167, 177, 210, .3);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.accordion .del_btn .icon
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    transition: fill .2s linear;
+
+    fill: #b4b8cf;
+}
+
+.accordion .del_btn:hover
+{
+    background: #ffe0e0;
+}
+
+.accordion .del_btn:hover .icon
+{
+    fill: #f55;
+}
+
+
+.accordion .head .arr
+{
+    position: relative;
+
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    margin-left: 20px;
+
+    transition: background .2s linear;
+    pointer-events: none;
+
+    border-radius: 50%;
+    background: #f9f9fc;
+}
+
+.accordion .head .arr:after
+{
+    position: absolute;
+    top: -2px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+    transition: .2s linear;
+    transform: rotate(-45deg);
+
+    border-bottom: 2px solid #b4b8cf;
+    border-left: 2px solid #b4b8cf;
+}
+
+
+.accordion .order
+{
+    display: flex;
+
+    width: 75px;
+    min-width: 75px;
+    margin-left: 18px;
+    padding-left: 18px;
+
+    pointer-events: none;
+
+    border-left: 1px solid #f6f6fb;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.accordion .order button
+{
+    position: relative;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    pointer-events: auto;
+}
+
+.accordion .order button:after
+{
+    position: absolute;
+    top: -4px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+    transition: border-color .2s linear;
+    transform: rotate(-45deg);
+
+    border-bottom: 2px solid #b4b8cf;
+    border-left: 2px solid #b4b8cf;
+}
+
+.accordion .order button.up_btn
+{
+    margin-right: auto;
+}
+
+.accordion .order button.up_btn:after
+{
+    top: 4px;
+
+    transform: rotate(-225deg);
+}
+
+.accordion .order button.down_btn
+{
+    margin-left: auto;
+}
+
+.accordion .item:first-child:last-child .head .order
+{
+    display: none;
+}
+
+.accordion .item:first-child .head .order,
+.accordion .item:last-child .head .order
+{
+    width: 43px;
+    min-width: 43px;
+}
+
+.accordion .item:first-child .head .order button.up_btn,
+.accordion .item:last-child .head .order button.down_btn
+{
+    display: none;
+}
+
+.accordion .order button:hover:after
+{
+    border-color: #7a76ff;
+}
+
+
+.accordion .head .mob_actions
+{
+    position: relative;
+
+    display: none;
+
+    min-width: 24px;
+    margin-left: 12px;
+}
+
+
+.accordion .head .mob_actions .btn
+{
+    display: flex;
+
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid rgba(180, 184, 207, .3);
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.accordion .head .mob_actions .btn span
+{
+    position: relative;
+
+    display: block;
+
+    width: 2px;
+    height: 2px;
+
+    border-radius: 50%;
+    background: #b4b8cf;
+}
+
+.accordion .head .mob_actions .btn span:before,
+.accordion .head .mob_actions .btn span:after
+{
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #b4b8cf;
+}
+
+.accordion .head .mob_actions .btn span:after
+{
+    top: 4px;
+}
+
+
+.accordion .head .mob_actions .dropdown
+{
+    position: absolute;
+    z-index: 5;
+    top: -2px;
+    right: calc(100% + 5px);
+
+    padding: 12px;
+
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(131, 159, 202, .28);
+}
+
+.accordion .head .mob_actions .dropdown:before
+{
+    position: absolute;
+    top: 8px;
+    right: -6px;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    background: #fff;
+}
+
+
+.accordion .head .mob_actions .dropdown > * + *
+{
+    margin-top: 12px;
+}
+
+.accordion .head .mob_actions .dropdown > *.border
+{
+    padding-top: 12px;
+
+    border-top: 1px solid #f6f6fb;
+}
+
+.accordion .head .mob_actions .dropdown button
+{
+    color: #272443;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    position: relative;
+
+    width: 100%;
+    padding-left: 22px;
+
+    text-align: left;
+}
+
+.accordion .head .mob_actions .dropdown .move_up button:before
+{
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    left: 3px;
+
+    display: block;
+
+    width: 7px;
+    height: 7px;
+    margin: auto;
+
+    content: '';
+    transition: border-color .2s linear;
+    transform: rotate(-45deg);
+
+    border-top: 2px solid #b4b8cf;
+    border-right: 2px solid #b4b8cf;
+}
+
+.accordion .head .mob_actions .dropdown .move_down button:before
+{
+    position: absolute;
+    top: -4px;
+    bottom: 0;
+    left: 3px;
+
+    display: block;
+
+    width: 7px;
+    height: 7px;
+    margin: auto;
+
+    content: '';
+    transition: border-color .2s linear;
+    transform: rotate(-45deg);
+
+    border-bottom: 2px solid #b4b8cf;
+    border-left: 2px solid #b4b8cf;
+}
+
+.accordion .item:first-child .head .mob_actions .dropdown .move_up,
+.accordion .item:last-child .head .mob_actions .dropdown .move_down
+{
+    display: none;
+}
+
+.accordion .head .mob_actions .dropdown .icon
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    margin: auto;
+
+    fill: #b4b8cf;
+}
+
+.accordion .head .mob_actions .dropdown .edit .icon
+{
+    width: 14px;
+    height: 14px;
+}
+
+.accordion .head .mob_actions .dropdown .delete .icon
+{
+    width: 14px;
+    height: 14px;
+}
+
+
+.accordion .data
+{
+    position: relative;
+
+    display: none;
+    overflow: hidden;
+
+    transition: .5s linear;
+
+    border-top: 1px solid #f6f6fb;
+    border-radius: 12px;
+}
+
+
+.accordion .item.active .head .title,
+.accordion .item.active .head:before
+{
+    color: #7a76ff;
+}
+
+.accordion .item.active .head .arr,
+.accordion .head:hover .arr
+{
+    background: #f2f1ff;
+}
+
+.accordion .item.active .head .arr:after
+{
+    top: 3px;
+
+    transform: rotate(-225deg);
+
+    border-color: #7a76ff;
+}
+
+.accordion .item.active .head ~ .data
+{
+    display: block;
+
+    -webkit-animation: fadeIn .5s linear both;
+            animation: fadeIn .5s linear both;
+}
+
+
+@-webkit-keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 1439px)
+{
+    .accordion .edit_btn,
+    .accordion .del_btn
+    {
+        margin-left: 12px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .accordion .head .title
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .accordion .head .edit_btn,
+    .accordion .head .del_btn,
+    .accordion .order
+    {
+        display: none;
+    }
+
+    .accordion .head .arr
+    {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        margin-left: 20px;
+    }
+
+    .accordion .head .arr:after
+    {
+        width: 6px;
+        height: 6px;
+    }
+
+    .accordion .item.active .head .arr:after
+    {
+        top: 2px;
+    }
+
+    .accordion .head .mob_actions
+    {
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .accordion .head .title
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .accordion .head .arr
+    {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+    }
+
+
+    .accordion .del_btn
+    {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        margin-left: 8px;
+    }
+
+    .accordion .del_btn .icon
+    {
+        width: 12px;
+        height: 12px;
+    }
+
+
+    .accordion .edit_btn
+    {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        margin-left: 8px;
+    }
+
+    .accordion .edit_btn .icon
+    {
+        width: 12px;
+        height: 12px;
+    }
+}

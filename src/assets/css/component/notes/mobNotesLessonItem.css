@@ -1,0 +1,152 @@
+.notes .mob_row .lesson
+{
+    padding: 17px 16px 24px;
+
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+
+.notes .mob_row .lesson .thumb
+{
+    position: relative;
+
+    overflow: hidden;
+
+    padding-bottom: 55.16%;
+
+    border-radius: 12px 12px 0 0;
+    background: #ddd;
+}
+
+.notes .mob_row .lesson .thumb:before
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0) 44.39%);
+}
+
+.notes .mob_row .lesson .thumb > img
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.notes .mob_row .lesson .info
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.notes .mob_row .lesson .name
+{
+    font-size: 18px;
+    line-height: 24px;
+
+    width: 100%;
+    margin-top: 14px;
+}
+
+
+.notes .mob_row .lesson .cat
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 10px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.notes .mob_row .lesson .cat .icon
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+
+    fill: currentColor;
+}
+
+
+.notes .mob_row .lesson .details
+{
+    color: #7a76ff;
+    font-size: 15px;
+    line-height: 15px;
+
+    display: block;
+
+    width: 100%;
+    margin-top: 18px;
+    padding: 19px;
+
+    transition: .2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    border: 1px solid rgba(122, 118, 255, .3);
+    border-radius: 4px;
+}
+
+.notes .mob_row .lesson .details:hover
+{
+    color: #fff;
+
+    background: #7a76ff;
+}
+
+
+
+@media (max-width: 767px)
+{
+    .notes .mob_row .lesson
+    {
+        padding: 20px 20px 24px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .notes .mob_row .lesson
+    {
+        padding: 15px 15px 24px;
+    }
+}

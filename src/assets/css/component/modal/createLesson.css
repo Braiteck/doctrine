@@ -1,0 +1,271 @@
+#create_lesson_modal
+{
+    width: 640px;
+}
+
+
+#create_lesson_modal .form
+{
+    position: relative;
+}
+
+#create_lesson_modal .form .line
+{
+    margin-bottom: 18px;
+}
+
+#create_lesson_modal .form .line.sep
+{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+#create_lesson_modal .form .block_title
+{
+    color: var(--text_color);
+    font-size: 18px;
+    line-height: 18px;
+
+    display: flex;
+
+    margin-bottom: 24px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#create_lesson_modal .form .block_title .exp
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 16px;
+
+    width: auto;
+    margin: 0;
+}
+
+
+#create_lesson_modal .form .video_cover .item
+{
+    overflow: hidden;
+
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(195, 215, 233, .3);
+}
+
+
+#create_lesson_modal .form .video_cover .head
+{
+    padding: 12px 16px;
+}
+
+#create_lesson_modal .form .video_cover .head:before
+{
+    display: none;
+}
+
+#create_lesson_modal .form .video_cover .head .icon
+{
+    display: block;
+
+    width: 14px;
+    min-width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+    fill: #7a76ff;
+}
+
+#create_lesson_modal .form .video_cover.accordion .head .title
+{
+    font-size: 14px;
+    line-height: 14px;
+}
+
+#create_lesson_modal .form .video_cover .data
+{
+    border-top: 1px solid #e9e9fb;
+    border-radius: 0;
+}
+
+
+#create_lesson_modal .form .video_cover .time
+{
+    padding: 32px;
+
+    text-align: center;
+}
+
+#create_lesson_modal .form .video_cover .time .title
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    margin-bottom: 16px;
+}
+
+#create_lesson_modal .form .video_cover .time .row
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    margin-left: -24px;
+
+    justify-content: center;
+}
+
+#create_lesson_modal .form .video_cover .time .row > *
+{
+    margin-left: 24px;
+}
+
+#create_lesson_modal .form .video_cover .time .input
+{
+    color: #7a76ff;
+    font-size: 18px;
+    line-height: 18px;
+
+    width: 48px;
+    height: 64px;
+    margin-bottom: 8px;
+    padding: 0;
+
+    text-align: center;
+
+    border: 1px solid #e2e1f4;
+    border-radius: 8px;
+    background: #f5f5ff;
+}
+
+
+#create_lesson_modal .form .video_cover .exp
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+
+    display: flex;
+
+    margin: 0;
+    padding: 12px 20px;
+
+    text-align: center;
+
+    background: #f9f9fc;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#create_lesson_modal .form .video_cover .exp .icon
+{
+    display: block;
+
+    width: 12px;
+    min-width: 12px;
+    height: 12px;
+    margin-right: 8px;
+
+    fill: #969bb4;
+}
+
+
+#create_lesson_modal .delete_lesson
+{
+    display: flex;
+
+    margin-top: 24px;
+
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#create_lesson_modal .delete_lesson button
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: 20px;
+
+    display: flex;
+
+    transition: color .2s linear;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#create_lesson_modal .delete_lesson button .icon
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+
+    transition: fill .2s linear;
+
+    fill: #969bb4;
+}
+
+#create_lesson_modal .delete_lesson button:hover
+{
+    color: #f55;
+}
+
+#create_lesson_modal .delete_lesson button:hover .icon
+{
+    fill: #f55;
+}
+
+
+#create_lesson_modal .preloader_wrap
+{
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+    border-radius: inherit;
+    background: rgba(255,255,266,.7);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+@media print, (max-width: 767px)
+{
+    #create_lesson_modal .form .block_title .exp
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+}

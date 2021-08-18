@@ -1,0 +1,1249 @@
+/*-------------
+    Tariffs
+-------------*/
+.tariffs .block_head .icon
+{
+    width: 21px;
+    height: 21px;
+}
+
+
+
+.tariffs .your_tariffs .list
+{
+    display: flex;
+
+    margin-left: -42px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tariffs .your_tariffs .list > *
+{
+    width: calc(33.333% - 42px);
+    margin-bottom: 44px;
+    margin-left: 42px;
+}
+
+.tariffs .your_tariffs .tariff
+{
+    border: 1px solid #f6f6fb;
+    border-radius: 4px;
+    background: #fff;
+}
+
+
+
+.tariffs .all_list
+{
+    padding-top: 32px;
+
+    border-top: 1px solid #e9e9fb;
+}
+
+
+.tariffs .all_list .tabs
+{
+    display: flex;
+
+    margin-bottom: 24px;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.tariffs .all_list .tabs button
+{
+    font-size: 14px;
+    line-height: 14px;
+
+    display: flex;
+
+    min-width: 140px;
+    height: 55px;
+    padding: 10px 20px;
+
+    transition: .2s linear;
+    text-align: center;
+
+    border: 1px solid #d7d6ff;
+    background: #fcfcfe;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tariffs .all_list .tabs button + button
+{
+    margin-left: -1px;
+}
+
+.tariffs .all_list .tabs button:first-child
+{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.tariffs .all_list .tabs button:last-child
+{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.tariffs .all_list .tabs button:hover,
+.tariffs .all_list .tabs button.active
+{
+    color: #7a76ff;
+
+    border-color: #d7d6ff;
+    background: #f2f1ff;
+}
+
+
+
+.tariffs .mob_tabs
+{
+    display: none;
+
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+
+.tariffs .mob_tabs .v-select
+{
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+}
+
+.tariffs .mob_tabs .vs--disabled .vs__clear,
+.tariffs .mob_tabs .vs--disabled .vs__dropdown-toggle,
+.tariffs .mob_tabs .vs--disabled .vs__open-indicator,
+.tariffs .mob_tabs .vs--disabled .vs__search,
+.tariffs .mob_tabs .vs--disabled .vs__selected
+{
+    cursor: default;
+    text-align: left;
+
+    background: none;
+}
+
+.tariffs .mob_tabs .v-select.vs--disabled .vs__selected-options:after
+{
+    display: none;
+}
+
+
+.tariffs .mob_tabs .v-select .vs__dropdown-toggle
+{
+    padding: 0;
+
+    border: none;
+    border-radius: 0;
+}
+
+
+.tariffs .mob_tabs .v-select .vs__selected-options
+{
+    font-family: var(--font_family);
+    font-size: 13px;
+    line-height: 13px;
+
+    position: relative;
+
+    height: 48px;
+    padding: 10px 42px 10px 20px;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+    background: #fcfcfe;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+.tariffs .mob_tabs .v-select .vs__selected-options:after
+{
+    position: absolute;
+    top: -3px;
+    right: 21px;
+    bottom: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-bottom: 2px solid #ceccea;
+    border-left: 2px solid #ceccea;
+}
+
+.tariffs .mob_tabs .v-select.vs--open .vs__selected-options
+{
+    border-radius: 4px 4px 0 0;
+}
+
+.tariffs .mob_tabs .v-select.vs--open .vs__selected-options:after
+{
+    top: 6px;
+
+    transform: rotate(-225deg);
+
+    border-color: #7a76ff;
+}
+
+
+.tariffs .mob_tabs .v-select .vs--single.vs--open .vs__selected,
+.tariffs .mob_tabs .v-select .vs__selected
+{
+    font-family: var(--font_family);
+    font-size: 13px;
+    line-height: 13px;
+
+    position: relative !important;
+
+    display: flex;
+    overflow: hidden;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    opacity: 1 !important;
+    border: none;
+    border-radius: 0;
+    background: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.tariffs .mob_tabs .v-select .vs__actions,
+.tariffs .mob_tabs .v-select .vs__clear,
+.tariffs .mob_tabs .v-select .vs__deselect,
+.tariffs .mob_tabs .v-select .vs__open-indicator,
+.tariffs .mob_tabs .v-select .vs__spinner,
+.tariffs .mob_tabs .vs__search,
+.tariffs .mob_tabs .vs__search:focus,
+.tariffs .mob_tabs .vs__no-options
+{
+    display: none;
+}
+
+
+.tariffs .mob_tabs .vs__dropdown-menu
+{
+    position: absolute;
+    z-index: 9;
+    top: 100%;
+    left: 0;
+
+    overflow: auto;
+
+    min-width: 100%;
+    max-height: 210px;
+    padding: 0;
+
+    border: none;
+    border-radius: 0 0 4px 4px;
+    background: #fcfcfe;
+    box-shadow: 0 24px 48px #cdccdd;
+
+    scrollbar-color: #7a76ff #f7f6fc;
+    scrollbar-width: thin;
+}
+
+.tariffs .mob_tabs .vs__dropdown-menu::-webkit-scrollbar
+{
+    width: 3px;
+    height: 3px;
+
+    border-radius: 2px;
+    background-color: #f7f6fc;
+}
+
+.tariffs .mob_tabs.vs__dropdown-menu::-webkit-scrollbar-thumb
+{
+    border-radius: 2px;
+    background-color: #7a76ff;
+}
+
+.tariffs .mob_tabs .vs__dropdown-menu .vs__dropdown-option,
+.tariffs .mob_tabs .vs__dropdown-menu .vs__dropdown-option--highlight
+{
+    color: currentColor;
+    font-size: 13px;
+    line-height: 13px;
+
+    position: relative;
+
+    display: flex;
+
+    padding: 14px 44px 15px 18px;
+
+    cursor: pointer;
+    transition: .2s linear;
+
+    border-radius: 0;
+    background: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.tariffs .mob_tabs .vs__dropdown-menu .vs__dropdown-option:empty
+{
+    display: none;
+}
+
+.tariffs .mob_tabs .vs__dropdown-menu .vs__dropdown-option:hover,
+.tariffs .mob_tabs .vs__dropdown-menu .vs__dropdown-option--selected
+{
+    color: #7a76ff;
+
+    background: #f2f1ff;
+}
+
+.tariffs .mob_tabs .v-select .vs__dropdown-menu .vs__dropdown-option--selected:after
+{
+    position: absolute;
+    top: -4px;
+    right: 20px;
+    bottom: 0;
+
+    display: block;
+
+    width: 10px;
+    height: 6px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-bottom: 2px solid #7a76ff;
+    border-left: 2px solid #7a76ff;
+}
+
+
+
+.tariffs .all_list .filter
+{
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 24px);
+
+    width: 245px;
+    max-width: 100%;
+}
+
+
+.tariffs .all_list .filter > .icon
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin: auto;
+
+    pointer-events: none;
+
+    fill: #6c6f84;
+}
+
+
+.tariffs .all_list .filter .v-select
+{
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+}
+
+.tariffs .all_list .filter .vs--disabled .vs__clear,
+.tariffs .all_list .filter .vs--disabled .vs__dropdown-toggle,
+.tariffs .all_list .filter .vs--disabled .vs__open-indicator,
+.tariffs .all_list .filter .vs--disabled .vs__search,
+.tariffs .all_list .filter .vs--disabled .vs__selected
+{
+    cursor: default;
+    text-align: left;
+
+    background: none;
+}
+
+.tariffs .all_list .filter .v-select.vs--disabled .vs__selected-options:after
+{
+    display: none;
+}
+
+
+.tariffs .all_list .filter .v-select .vs__dropdown-toggle
+{
+    padding: 0;
+
+    border: none;
+    border-radius: 0;
+}
+
+
+.tariffs .all_list .filter .v-select .vs__selected-options
+{
+    font-family: var(--font_family);
+    font-size: 13px;
+    line-height: 13px;
+
+    position: relative;
+
+    height: 48px;
+    padding: 10px 42px;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+    background: #fcfcfe;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+.tariffs .all_list .filter .v-select .vs__selected-options:after
+{
+    position: absolute;
+    top: -3px;
+    right: 21px;
+    bottom: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-bottom: 2px solid #ceccea;
+    border-left: 2px solid #ceccea;
+}
+
+.tariffs .all_list .filter .v-select.vs--open .vs__selected-options
+{
+    border-radius: 4px 4px 0 0;
+}
+
+.tariffs .all_list .filter .v-select.vs--open .vs__selected-options:after
+{
+    top: 6px;
+
+    transform: rotate(-225deg);
+
+    border-color: #7a76ff;
+}
+
+
+.tariffs .all_list .filter .v-select .vs--single.vs--open .vs__selected,
+.tariffs .all_list .filter .v-select .vs__selected
+{
+    font-family: var(--font_family);
+    font-size: 13px;
+    line-height: 13px;
+
+    position: relative !important;
+
+    display: flex;
+    overflow: hidden;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    opacity: 1 !important;
+    border: none;
+    border-radius: 0;
+    background: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.tariffs .all_list .filter .v-select .vs__actions,
+.tariffs .all_list .filter .v-select .vs__clear,
+.tariffs .all_list .filter .v-select .vs__deselect,
+.tariffs .all_list .filter .v-select .vs__open-indicator,
+.tariffs .all_list .filter .v-select .vs__spinner,
+.tariffs .all_list .filter .vs__search,
+.tariffs .all_list .filter .vs__search:focus,
+.tariffs .all_list .filter .vs__no-options
+{
+    display: none;
+}
+
+
+.tariffs .all_list .filter .vs__dropdown-menu
+{
+    position: absolute;
+    z-index: 9;
+    top: 100%;
+    left: 0;
+
+    overflow: auto;
+
+    min-width: 100%;
+    max-height: 210px;
+    padding: 0;
+
+    border: none;
+    border-radius: 0 0 4px 4px;
+    background: #fcfcfe;
+    box-shadow: 0 24px 48px #cdccdd;
+
+    scrollbar-color: #7a76ff #f7f6fc;
+    scrollbar-width: thin;
+}
+
+.tariffs .all_list .filter .vs__dropdown-menu::-webkit-scrollbar
+{
+    width: 3px;
+    height: 3px;
+
+    border-radius: 2px;
+    background-color: #f7f6fc;
+}
+
+.tariffs .all_list .filter .vs__dropdown-menu::-webkit-scrollbar-thumb
+{
+    border-radius: 2px;
+    background-color: #7a76ff;
+}
+
+.tariffs .all_list .filter .vs__dropdown-menu .vs__dropdown-option,
+.tariffs .all_list .filter .vs__dropdown-menu .vs__dropdown-option--highlight
+{
+    color: currentColor;
+    font-size: 13px;
+    line-height: 13px;
+
+    position: relative;
+
+    display: flex;
+
+    padding: 14px 44px 15px 18px;
+
+    cursor: pointer;
+    transition: .2s linear;
+
+    border-radius: 0;
+    background: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.tariffs .all_list .filter .vs__dropdown-menu .vs__dropdown-option:empty
+{
+    display: none;
+}
+
+.tariffs .all_list .filter .vs__dropdown-menu .vs__dropdown-option:hover,
+.tariffs .all_list .filter .vs__dropdown-menu .vs__dropdown-option--selected
+{
+    color: #7a76ff;
+
+    background: #f2f1ff;
+}
+
+.tariffs .all_list .filter .v-select .vs__dropdown-menu .vs__dropdown-option--selected:after
+{
+    position: absolute;
+    top: -4px;
+    right: 20px;
+    bottom: 0;
+
+    display: block;
+
+    width: 10px;
+    height: 6px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-bottom: 2px solid #7a76ff;
+    border-left: 2px solid #7a76ff;
+}
+
+
+
+.tariffs .all_list .tab_content
+{
+    position: relative;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    height: 0;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.tariffs .all_list .tab_content.active
+{
+    visibility: visible;
+    overflow: visible;
+
+    height: auto;
+
+    transition: opacity .5s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+.tariffs .all_list .desc
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+
+    width: 560px;
+    max-width: 100%;
+    margin-bottom: 48px;
+}
+
+
+.tariffs .all_list .row
+{
+    margin-bottom: -24px;
+    margin-left: -24px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.tariffs .all_list .row > *
+{
+    width: calc(25% - 24px);
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
+
+.tariffs .all_list .tariff
+{
+    position: relative;
+
+    padding: 8px 8px 94px;
+
+    transition: box-shadow .2s linear;
+    text-align: center;
+
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+
+.tariffs .all_list .tariff .tariff_name
+{
+    font-size: 18px;
+    line-height: 18px;
+
+    padding: 18px;
+
+    text-transform: uppercase;
+
+    border-radius: 8px;
+    background: #f9f9fc;
+}
+
+
+.tariffs .all_list .tariff .price
+{
+    font-size: 32px;
+    line-height: 32px;
+
+    position: relative;
+
+    display: flex;
+
+    min-height: 77px;
+    margin-top: 11px;
+    padding-top: 22px;
+
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tariffs .all_list .tariff .price .currency
+{
+    font-family: var(--font_family3);
+    font-weight: bold;
+
+    margin-left: 3px;
+}
+
+.tariffs .all_list .tariff .price .old
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    text-decoration-line: line-through;
+}
+
+.tariffs .all_list .tariff .price .old .currency
+{
+    font-family: var(--font_family3);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+
+    margin-left: 1px;
+}
+
+.tariffs .all_list .tariff .price .duration
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+
+    width: 100%;
+    margin-top: 4px;
+}
+
+.tariffs .all_list .tariff .price .current
+{
+    font-size: 24px;
+    line-height: 24px;
+}
+
+
+.tariffs .all_list .tariff .students
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 20px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tariffs .all_list .tariff .students .icon
+{
+    position: relative;
+    top: -1px;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+
+    fill: #7a76ff;
+}
+
+
+.tariffs .all_list .tariff .memory
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 20px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tariffs .all_list .tariff .memory .icon
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+
+    fill: #7a76ff;
+}
+
+
+.tariffs .all_list .tariff .chats
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 20px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tariffs .all_list .tariff .chats .icon
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+
+    fill: #7a76ff;
+}
+
+
+.tariffs .all_list .tariff .discount
+{
+    color: #ff6a4d;
+    font-family: var(--font_family2);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 18px;
+
+    margin-top: 18px;
+}
+
+
+.tariffs .all_list .tariff .buy_btn
+{
+    color: #7a76ff;
+    font-size: 13px;
+    line-height: 18px;
+
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+
+    display: block;
+
+    width: calc(100% - 32px);
+    height: 48px;
+    padding: 15px 20px;
+
+    transition: .2s linear;
+
+    border: 1px solid rgba(122, 118, 255, .3);
+    border-radius: 4px;
+}
+
+.tariffs .all_list .tariff .buy_btn:hover,
+.tariffs .all_list .tariff .buy_btn.active
+{
+    color: #fff;
+
+    border-color: #7a76ff;
+    background: #7a76ff;
+}
+
+.tariffs .all_list .tariff .buy_btn.active:hover
+{
+    border-color: #6a66e8;
+    background: #6a66e8;
+}
+
+
+.tariffs .all_list .tariff .buy_btn.extend_btn
+{
+    color: #ff5d4e;
+
+    border: 1px solid #ff5d4e;
+    background: none;
+}
+
+.tariffs .all_list .tariff .buy_btn.extend_btn:hover
+{
+    color: #fff;
+
+    background: #ff5d4e;
+}
+
+
+.tariffs .all_list .tariff .info
+{
+    display: flex;
+
+    margin-top: 20px;
+    padding: 0 16px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tariffs .all_list .tariff .info .icon
+{
+    display: block;
+
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+
+    fill: #969bb4;
+}
+
+.tariffs .all_list .tariff .info .name
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 14px;
+
+    margin-right: auto;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tariffs .all_list .tariff .count
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.tariffs .all_list .tariff .count .total
+{
+    color: #272443;
+    font-weight: 700;
+}
+
+
+.tariffs .all_list .tariff .valid_until
+{
+    font-size: 13px;
+    line-height: 13px;
+
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+
+    display: flex;
+
+    width: calc(100% - 32px);
+    height: 48px;
+    padding: 15px 20px;
+
+    text-align: center;
+
+    border-radius: 4px;
+    background: #f9f9fc;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* .tariffs .all_list .tariff .valid_until .date
+{
+    margin-left: 6px;
+} */
+
+/* .tariffs .all_list .tariff .valid_until .infinity .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 10px;
+    margin: 0 0 0 12px;
+
+    fill: #969bb4;
+} */
+
+
+.tariffs .all_list .tariff:hover
+{
+    box-shadow: 0 2px 14px rgba(131, 159, 202, .28);
+}
+
+
+.tariffs .all_list .tariff.hot:before
+{
+    position: absolute;
+    top: -14px;
+    right: 11px;
+
+    display: block;
+
+    width: 44px;
+    height: 55px;
+
+    content: '';
+    transform: rotate(30deg);
+
+    background: url(/images/ic_hot.svg) 0 0 no-repeat;
+}
+
+.tariffs .all_list .tariff.hot .buy_btn
+{
+    color: #fff;
+
+    transition: none;
+
+    border: none;
+    background: linear-gradient(180deg, #ff4e4e 0%, #fe8b4b 100%);
+}
+
+.tariffs .all_list .tariff.hot .buy_btn:hover
+{
+    background: #ff5d4e;
+}
+
+
+
+@media (max-width: 1439px)
+{
+    .tariffs .your_tariffs .list
+    {
+        margin-left: -24px;
+    }
+
+    .tariffs .your_tariffs .list > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 32px;
+        margin-left: 24px;
+    }
+
+
+    .tariffs .your_tariffs .tariff .head
+    {
+        padding: 12px 16px;
+    }
+
+    .tariffs .your_tariffs .tariff .points
+    {
+        margin: 16px 16px 0;
+    }
+
+    .tariffs .your_tariffs .tariff .valid_until
+    {
+        padding: 16px;
+    }
+
+
+    .tariffs .all_list .tabs button
+    {
+        height: 48px;
+    }
+
+
+    .tariffs .all_list .desc
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .tariffs .all_list .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+    .tariffs .all_list .tariff .price
+    {
+        font-size: 28px;
+    }
+}
+
+
+
+@media (max-width: 1279px)
+{
+    .tariffs .your_tariffs .list
+    {
+        padding-bottom: 8px;
+    }
+
+    .tariffs .your_tariffs .list > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+    }
+
+
+    .tariffs .all_list .row > *
+    {
+        width: calc(50% - 24px);
+    }
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .tariffs .all_list .tabs button
+    {
+        min-width: 120px;
+    }
+
+
+    .tariffs .all_list .filter
+    {
+        width: 220px;
+    }
+
+
+    .tariffs .all_list .tariff .price
+    {
+        font-size: 26px;
+        line-height: 30px;
+
+        min-height: 75px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .tariffs .your_tariffs .list
+    {
+        padding-bottom: 12px;
+    }
+
+    .tariffs .your_tariffs .list > *
+    {
+        width: calc(100% - 24px);
+        margin-bottom: 20px;
+    }
+
+
+    .tariffs .all_list .desc
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .tariffs .all_list .filter
+    {
+        position: relative;
+        bottom: 0;
+
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .tariffs .all_list .tabs
+    {
+        width: 100%;
+    }
+
+    .tariffs .all_list .tabs button
+    {
+        width: 33.333%;
+        min-width: 0;
+    }
+
+
+    .tariffs .all_list .row > *
+    {
+        width: calc(100% - 24px);
+    }
+
+
+    .tariffs .all_list .tariff .price
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        min-height: 0;
+    }
+
+
+    .tariffs .all_list .tariff .price .current
+    {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .tariffs .all_list .tabs
+    {
+        display: none;
+    }
+
+    .tariffs .mob_tabs
+    {
+        display: block;
+    }
+}

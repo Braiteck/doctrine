@@ -1,0 +1,517 @@
+/*-----------------
+    Lesson info
+-----------------*/
+.lesson_info
+{
+    justify-content: space-between;
+}
+
+
+
+.lesson_info .video_wrap
+{
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 24px;
+
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+
+.lesson_info .video
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: calc(100% - 334px);
+    padding-bottom: 32%;
+
+    background: #7a76ff;
+}
+
+.lesson_info .video.full_width
+{
+    width: 100%;
+}
+
+
+.lesson_info .video .preloader_wrap
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.lesson_info .video .preloader .rocket .icon,
+.lesson_info .video .preloader .waves
+{
+    fill: #fff;
+}
+
+
+.lesson_info .video .plyr
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.lesson_info .video .plyr .plyr__video-wrapper,
+.lesson_info .video .plyr .plyr__video-embed__container
+{
+    height: 100% !important;
+    padding: 0 !important;
+
+    transform: none !important;
+}
+
+.lesson_info .video .plyr .plyr__poster
+{
+    z-index: 2;
+
+    background-size: cover;
+}
+
+.lesson_info .video .plyr.plyr--youtube .plyr__poster
+{
+    background-size: auto;
+}
+
+
+.lesson_info .video video
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.lesson_info .video .processed
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.lesson_info .video .processed .status_text
+{
+    color: #fff;
+    font-family: var(--font_family2);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 15px;
+
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+
+    display: flex;
+
+    width: 212px;
+    min-height: 50px;
+    margin: auto;
+    padding: 10px;
+
+    text-align: center;
+
+    border-radius: 32px;
+    background: rgba(0, 0, 0, .2);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.lesson_info .data
+{
+    width: 100%;
+    margin-bottom: -24px;
+}
+
+.lesson_info .data > *
+{
+    width: calc(100% - 334px);
+    margin-bottom: 24px;
+}
+
+.lesson_info .data > *.clear
+{
+    margin-bottom: 0;
+}
+
+.lesson_info .data > *.col_right
+{
+    width: 310px;
+    max-width: 100%;
+}
+
+.lesson_info .data > *.col_right > * + *
+{
+    margin-top: 24px;
+}
+
+
+
+.lesson_info .description
+{
+    overflow: hidden;
+
+    margin-bottom: 24px;
+
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+
+.lesson_info .description .title
+{
+    font-family: var(--font_family2);
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+
+    display: flex;
+
+    margin-bottom: 12px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.lesson_info .description .title .icon
+{
+    display: block;
+
+    margin-right: 9px;
+
+    fill: #7a76ff;
+}
+
+
+.lesson_info .description .desc
+{
+    padding: 24px;
+
+    background: #fcfcfe;
+}
+
+
+.lesson_info .description .text_block
+{
+    width: 658px;
+    max-width: 100%;
+}
+
+
+.lesson_info .description .tasks
+{
+    padding: 24px;
+
+    border-top: 1px solid #f4f3fa;
+}
+
+.lesson_info .description .tasks .title .icon
+{
+    width: 12px;
+    height: 12px;
+}
+
+
+.lesson_info .description .tasks .time
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: 20px;
+
+    margin-top: 12px;
+}
+
+.lesson_info .description .tasks .time b
+{
+    color: #272443;
+}
+
+
+
+@media (max-width: 1439px)
+{
+    .lesson_info .video
+    {
+        padding-bottom: 40%;
+    }
+}
+
+
+
+@media (max-width: 1279px)
+{
+    .lesson_info .video
+    {
+        width: 100%;
+        padding-bottom: 45%;
+
+        border-radius: 12px;
+    }
+
+
+    .lesson_info .playlist
+    {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+        padding-bottom: 10px;
+
+        border-radius: 12px;
+    }
+
+    .lesson_info .playlist .mob_btn
+    {
+        display: flex;
+
+        margin-bottom: -10px;
+    }
+
+    .lesson_info .playlist .mob_btn.active
+    {
+        margin-bottom: 0;
+    }
+
+    .lesson_info .playlist .list
+    {
+        display: none;
+
+        height: 320px;
+    }
+
+
+    .lesson_info .playlist .prev_next
+    {
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        margin: 0;
+        padding: 10px 30px;
+
+        background: #fff;
+        box-shadow: 0 -12px 48px rgba(204, 214, 248, .3);
+    }
+
+    .lesson_info .playlist .prev_next button
+    {
+        width: 163px;
+    }
+
+    .lesson_info .playlist .prev_next button.next
+    {
+        width: calc(100% - 178px);
+
+        border: none;
+        background: #f2f1ff;
+    }
+
+
+    .lesson_info .data
+    {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .lesson_info .data > *,
+    .lesson_info .data > *.col_right
+    {
+        width: 100%;
+    }
+
+
+    .lesson_info .description
+    {
+        order: 1;
+    }
+
+    .lesson_info .data > *.col_right
+    {
+        order: 3;
+    }
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .lesson_info
+    {
+        margin-bottom: 135px !important;
+    }
+
+    .lesson_info.free
+    {
+        margin-bottom: 60px !important;
+    }
+
+
+    .lesson_info .playlist .prev_next
+    {
+        bottom: 75px;
+
+        padding: 10px 45px;
+    }
+
+
+    .lesson_info .video .processed .preloader
+    {
+        margin-bottom: 60px;
+    }
+
+    .lesson_info .video .processed .status_text
+    {
+        bottom: 30px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .lesson_info .video .processed .preloader
+    {
+        display: none;
+    }
+
+    .lesson_info .video .processed .status_text
+    {
+        min-height: 40px;
+    }
+
+
+    .lesson_info .playlist .mob_btn
+    {
+        min-height: 72px;
+        padding: 24px 72px 24px 56px;
+    }
+
+    .lesson_info .playlist .mob_btn .icon
+    {
+        top: 20px;
+        left: 20px;
+    }
+
+    .lesson_info .playlist .mob_btn .arr
+    {
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .lesson_info .playlist .list
+    {
+        height: 304px;
+    }
+
+    .lesson_info .playlist .list .item
+    {
+        padding: 14px 20px 14px 56px;
+    }
+
+    .lesson_info .playlist .list .icon
+    {
+        left: 22px;
+    }
+
+    .lesson_info .playlist .list .active .icon,
+    .lesson_info .playlist .list .success .icon
+    {
+        left: 20px;
+    }
+
+
+    .lesson_info .description .desc,
+    .lesson_info .description .tasks
+    {
+        padding: 20px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .lesson_info
+    {
+        width: calc(100% + 40px);
+        margin: -32px -20px 125px !important;
+    }
+
+    .lesson_info.free
+    {
+        margin-bottom: 50px !important;
+    }
+
+
+    .lesson_info .video_wrap
+    {
+        margin-bottom: 0;
+    }
+
+    .lesson_info .playlist
+    {
+        margin-top: 0;
+    }
+
+    .lesson_info .video,
+    .lesson_info .playlist,
+    .lesson_info .description
+    {
+        border-radius: 0;
+    }
+}

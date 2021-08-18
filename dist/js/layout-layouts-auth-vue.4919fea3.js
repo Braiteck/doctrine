@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["layout-layouts-auth-vue"],{"3bb0":function(t,a,n){"use strict";n.r(a);var e=function(){var t=this,a=t.$createElement,n=t._self._c||a;return n("section",{staticClass:"wrap"},[n("section",{staticClass:"main auth_wrap"},[n("transition",{attrs:{name:"fade",mode:"out-in"}},[n("router-view")],1)],1)])},s=[],u=(n("7198"),{name:"Auth"}),i=u,o=n("2877"),r=Object(o["a"])(i,e,s,!1,null,null,null);a["default"]=r.exports},7198:function(t,a,n){}}]);
+//# sourceMappingURL=layout-layouts-auth-vue.4919fea3.js.map

@@ -1,0 +1,250 @@
+/*-----------------------
+    Mob. bottom panel
+-----------------------*/
+.mob_bottom_panel
+{
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    padding: 10px 0 11px;
+
+    background: #fff;
+}
+
+.mob_bottom_panel .cont.row
+{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.mob_bottom_panel a
+{
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+    height: 54px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mob_bottom_panel a.bg:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 40px;
+    height: 40px;
+    margin: auto;
+
+    content: '';
+
+    border-radius: 8px;
+    background: #f2f1ff;
+}
+
+.mob_bottom_panel a .icon
+{
+    display: block;
+
+    transition: fill .2s linear;
+
+    fill: #969bb4;
+}
+
+.mob_bottom_panel a .ic_courses
+{
+    width: 27px;
+    height: 27px;
+}
+
+.mob_bottom_panel a .ic_lessons
+{
+    width: 27px;
+    height: 27px;
+}
+
+.mob_bottom_panel a .ic_notes
+{
+    width: 24px;
+    height: 27px;
+}
+
+.mob_bottom_panel a .ic_profile
+{
+    width: 25px;
+    height: 29px;
+}
+
+.mob_bottom_panel a .ic_courses
+{
+    width: 20px;
+    height: 20px;
+}
+
+.mob_bottom_panel a .ic_lessons
+{
+    width: 20px;
+    height: 20px;
+}
+
+.mob_bottom_panel a .ic_users
+{
+    width: 21px;
+    height: 21px;
+}
+
+.mob_bottom_panel a.plus .icon:before,
+.mob_bottom_panel a.plus .icon:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 16px;
+    height: 2px;
+    margin: auto;
+
+    content: '';
+
+    background: #7a76ff;
+}
+
+.mob_bottom_panel a.plus .icon:after
+{
+    width: 2px;
+    height: 16px;
+}
+
+
+.mob_bottom_panel a.burger span
+{
+    position: relative;
+
+    display: block;
+
+    width: 24px;
+    height: 2px;
+
+    background: #969bb4;
+}
+
+.mob_bottom_panel a.burger span:before,
+.mob_bottom_panel a.burger span:after
+{
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: #969bb4;
+}
+
+.mob_bottom_panel a.burger span:after
+{
+    top: 10px;
+}
+
+
+.mob_bottom_panel a.active .icon
+{
+    fill: #7a76ff;
+}
+
+.mob_bottom_panel a.burger.active span,
+.mob_bottom_panel a.burger.active span:before,
+.mob_bottom_panel a.burger.active span:after
+{
+    background: #7a76ff;
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .mob_bottom_panel
+    {
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .mob_bottom_panel
+    {
+        padding: 8px 0 7px;
+    }
+
+    .mob_bottom_panel a
+    {
+        height: 40px;
+    }
+
+
+    .mob_bottom_panel a .ic_courses
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mob_bottom_panel a .ic_lessons
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mob_bottom_panel a .ic_notes
+    {
+        width: 18px;
+        height: 20px;
+    }
+
+    .mob_bottom_panel a .ic_profile
+    {
+        width: 19px;
+        height: 22px;
+    }
+
+
+    .mob_bottom_panel a.burger span
+    {
+        width: 21px;
+    }
+
+    .mob_bottom_panel a.burger span:before
+    {
+        top: -8px;
+    }
+
+    .mob_bottom_panel a.burger span:after
+    {
+        top: 8px;
+    }
+}

@@ -1,0 +1,158 @@
+/*--------------
+    Mob menu
+--------------*/
+.mob_menu
+{
+    display: none;
+
+    margin-bottom: 24px;
+}
+
+
+.mob_menu .VueCarousel-wrapper
+{
+    overflow: visible !important;
+
+    width: calc(100% + 24px);
+    margin: 0 -12px;
+    padding: 0 16px;
+}
+
+.mob_menu .VueCarousel-slide
+{
+    padding: 0 12px;
+}
+
+
+.mob_menu .row
+{
+    margin-bottom: -24px;
+    margin-left: -24px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.mob_menu .row > *
+{
+    width: calc(33.333% - 24px);
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
+
+.mob_menu .link
+{
+    color: #969bb4;
+    font-size: 18px;
+    line-height: 18px;
+
+    display: flex;
+
+    min-height: 100px;
+    padding: 20px;
+
+    transition: .2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 8px;
+    background: #fcfcfe;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mob_menu .link .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+
+    fill: currentColor;
+}
+
+
+.mob_menu .link.active
+{
+    color: #7a76ff;
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .mob_menu
+    {
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .mob_menu .VueCarousel-wrapper
+    {
+        width: calc(100% + 12px);
+        margin: 0 -6px;
+    }
+
+    .mob_menu .VueCarousel-slide
+    {
+        padding: 0 6px;
+    }
+
+
+    .mob_menu .row
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .mob_menu .row > *
+    {
+        width: calc(50% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+    .mob_menu .link
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        min-height: 80px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .mob_menu .link
+    {
+        font-size: 14px;
+        line-height: 14px;
+
+        min-height: 75px;
+    }
+
+    .mob_menu .link .icon
+    {
+        margin: 0 auto 11px;
+    }
+
+    .mob_menu .link span
+    {
+        display: block;
+
+        width: 100%;
+    }
+}

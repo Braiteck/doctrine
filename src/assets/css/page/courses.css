@@ -1,0 +1,69 @@
+/*-------------
+    Courses
+-------------*/
+.courses .block_head .icon
+{
+    width: 20px;
+    height: 20px;
+}
+
+
+.courses .row
+{
+    margin-bottom: -24px;
+    margin-left: -24px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.courses .row > *
+{
+    width: calc(33.333% - 24px);
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
+
+
+@media (max-width: 1439px)
+{
+    .courses .row
+    {
+        margin-bottom: -24px;
+        margin-left: -20px;
+    }
+
+    .courses .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 24px;
+        margin-left: 20px;
+    }
+}
+
+
+
+@media (max-width: 1279px)
+{
+    .courses .row
+    {
+        margin-left: -24px;
+    }
+
+    .courses .row > *
+    {
+        width: calc(50% - 24px);
+        margin-left: 24px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .courses .row > *
+    {
+        width: calc(100% - 24px);
+    }
+}

@@ -1,0 +1,193 @@
+/*------------
+    Footer
+------------*/
+footer
+{
+    color: #7b7d8a;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: 16px;
+
+    padding: 47px 0;
+}
+
+
+footer .row
+{
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+footer .links > * + *
+{
+    margin-left: 51px;
+}
+
+footer .links a
+{
+    color: #7b7d8a;
+
+    display: block;
+
+    transition: color .2s linear;
+    text-decoration: none;
+}
+
+footer .links a:hover,
+footer .links a.active
+{
+    color: #7a76ff;
+}
+
+
+
+footer .socials
+{
+    align-items: center;
+    align-content: center;
+}
+
+footer .socials a
+{
+    display: block;
+}
+
+footer .socials a + a
+{
+    margin-left: 20px;
+}
+
+footer .socials a > *
+{
+    display: block;
+
+    transition: fill .2s linear;
+
+    fill: #aebaf4;
+}
+
+footer .socials a > *.ic_facebook
+{
+    width: 7.88px;
+    height: 15px;
+}
+
+footer .socials a > *.ic_vkontakte
+{
+    width: 18px;
+    height: 10.27px;
+}
+
+footer .socials a > *.ic_youtube
+{
+    width: 15px;
+    height: 12px;
+}
+
+footer .socials a > *.ic_instagram
+{
+    width: 11.67px;
+    height: 11.67px;
+}
+
+footer .socials a:hover > *
+{
+    fill: #7a76ff;
+}
+
+
+
+.content footer
+{
+    padding: 11px 110px 32px 36px;
+}
+
+
+
+@media (max-width: 1439px)
+{
+    footer
+    {
+        padding: 40px 0;
+    }
+
+
+    .content footer
+    {
+        padding: 10px 100px 25px 30px;
+    }
+}
+
+
+
+@media (max-width: 1279px)
+{
+    footer
+    {
+        padding: 30px 0;
+    }
+}
+
+
+
+@media (max-width: 1023px)
+{
+    footer .cont > *
+    {
+        order: 2;
+    }
+
+
+    footer .links
+    {
+        width: calc(100% + 90px);
+        margin: 0 -45px 20px;
+        padding: 0 45px 20px;
+
+        border-bottom: 1px solid #edebf7;
+
+        order: 1;
+    }
+
+    footer .links > * + *
+    {
+        margin-left: 0;
+    }
+
+
+    .content footer
+    {
+        height: 75px;
+    }
+
+    .content footer > *
+    {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    footer .links > *
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    footer .links > * + *
+    {
+        margin-top: 15px;
+    }
+
+
+    .content footer
+    {
+        height: 55px;
+    }
+}

@@ -1,0 +1,68 @@
+#add_material_modal
+{
+    width: 640px;
+}
+
+
+#add_material_modal .form
+{
+    counter-reset: item;
+}
+
+
+#add_material_modal .form .line
+{
+    margin-bottom: 18px;
+}
+
+
+#add_material_modal .form .file_item
+{
+    margin-right: -32px;
+    margin-bottom: 24px;
+    margin-left: -32px;
+    padding: 0 32px 6px;
+
+    border-bottom: 1px solid #e9e9fb;
+}
+
+
+#add_material_modal .form .file_name
+{
+    font-size: 14px;
+    line-height: 14px;
+
+    position: relative;
+
+    display: flex;
+
+    min-height: 28px;
+    padding-left: 38px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#add_material_modal .form .file_name:before
+{
+    color: #7a76ff;
+    font-family: var(-font-family2);
+    font-weight: 600;
+    line-height: 28px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 28px;
+    height: 28px;
+
+    content: counters(item, '') '';
+    counter-increment: item;
+    text-align: center;
+
+    border-radius: 50%;
+    background: #f1f1fe;
+}

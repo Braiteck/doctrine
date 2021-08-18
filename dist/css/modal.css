@@ -1,0 +1,295 @@
+/*-----------
+    PopUp
+-----------*/
+.modal_container
+{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
+
+    background: rgb(4, 8, 14, .75);
+}
+
+
+.modal_scroll
+{
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
+    padding: 40px;
+
+    transform: translateZ(0);
+    text-align: center;
+
+    scroll-behavior: smooth;
+}
+
+.modal_scroll:before
+{
+    font-size: 0;
+
+    display: inline-block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    vertical-align: middle;
+}
+
+
+.modal
+{
+    position: relative;
+    z-index: 5;
+
+    display: inline-block;
+
+    width: 479px;
+    max-width: 100%;
+    padding: 24px 32px;
+
+    text-align: left;
+    vertical-align: middle;
+
+    border-radius: 8px;
+    background: #fbfbff;
+}
+
+
+.modal .close
+{
+    color: #d0d2dd;
+
+    position: absolute;
+    top: 23px;
+    right: 32px;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    transition: color .2s linear;
+
+    border: 2px solid currentColor;
+    border-radius: 50px;
+}
+
+.modal .close:before,
+.modal .close:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 75%;
+    height: 1px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(45deg);
+
+    background: currentColor;
+}
+
+.modal .close:after
+{
+    transform: rotate(-45deg);
+}
+
+.modal .close:hover
+{
+    color: #7a76ff;
+}
+
+
+.modal .modal_title
+{
+    font-size: 18px;
+    line-height: 18px;
+
+    display: flex;
+
+    margin-bottom: 32px;
+    padding: 0 0 18px;
+
+    border-bottom: 1px solid #e9e9fb;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.modal .form
+{
+    --form_bg_color: #fff;
+}
+
+.modal .form .line.sep
+{
+    width: calc(100% + 64px);
+    margin-right: -32px;
+    margin-left: -32px;
+}
+
+.modal .form .submit_btn
+{
+    min-height: 48px;
+}
+
+
+
+.modal .detele_confirm
+{
+    text-align: center;
+}
+
+.modal .detele_confirm .icon
+{
+    display: block;
+
+    max-width: 100%;
+    margin: 0 auto 18px;
+}
+
+.modal .detele_confirm .title
+{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.modal .detele_confirm .btns
+{
+    display: flex;
+
+    margin-top: 24px;
+    margin-bottom: -12px;
+    margin-left: -24px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.modal .detele_confirm .btns > *
+{
+    width: calc(50% - 24px);
+    margin-bottom: 12px;
+    margin-left: 24px;
+}
+
+.modal .detele_confirm .btns button
+{
+    color: #7a76ff;
+    font-size: 13px;
+    line-height: 13px;
+
+    display: block;
+
+    height: 48px;
+
+    transition: .2s linear;
+
+    border: 1px solid rgba(122, 118, 255, .3);
+    border-radius: 4px;
+}
+
+.modal .detele_confirm .btns button:hover,
+.modal .detele_confirm .btns button.yes
+{
+    color: #fff;
+
+    border-color: #7a76ff;
+    background: #7a76ff;
+}
+
+.modal .detele_confirm .btns button.yes:hover
+{
+    background: #6a66e8;
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .modal_scroll
+    {
+        padding: 30px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .modal_scroll
+    {
+        padding: 20px;
+    }
+
+
+    .modal
+    {
+        padding: 24px;
+    }
+
+    .modal .modal_title
+    {
+        padding: 0 20px 18px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .modal_scroll
+    {
+        padding: 20px 5px;
+    }
+
+
+    .modal .close
+    {
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .modal
+    {
+        padding: 20px;
+    }
+
+
+    .modal .modal_title
+    {
+        line-height: 20px;
+
+        flex-direction: column;
+
+        margin-bottom: 24px;
+        padding: 0 20px 18px;
+
+        text-align: center;
+    }
+}

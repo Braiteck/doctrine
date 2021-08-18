@@ -1,0 +1,412 @@
+/*-----------------
+    Course form
+-----------------*/
+.course_form
+{
+    padding-bottom: 100px;
+}
+
+
+.course_form .data
+{
+    position: relative;
+}
+
+
+.course_form .block_head .icon
+{
+    width: 18px;
+    height: 20px;
+}
+
+
+.course_form .block
+{
+    margin-bottom: 0 !important;
+}
+
+.course_form .block + .block
+{
+    margin-top: 48px;
+}
+
+
+.course_form .block_title
+{
+    color: #6c6f84;
+    font-size: 18px;
+    line-height: 18px;
+
+    display: flex;
+
+    margin-bottom: 32px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.course_form * + .block_title
+{
+    margin-top: 32px;
+}
+
+.course_form .block_title .exp
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 16px;
+
+    width: auto;
+    margin: 0;
+}
+
+
+
+.course_form .description
+{
+    position: relative;
+
+    display: flex;
+
+    padding: 24px 24px 6px;
+
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.course_form .description .block_title
+{
+    color: var(--text_color);
+
+    margin-bottom: 24px;
+}
+
+.course_form .description .info
+{
+    width: 618px;
+    max-width: 100%;
+}
+
+.course_form .description .line
+{
+    margin-bottom: 18px;
+}
+
+
+
+.course_form .program .accordion .head
+{
+    padding-left: 62px;
+}
+
+
+
+.course_form .program .add_lesson_btn
+{
+    color: #7a76ff;
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+
+    display: flex;
+
+    width: 100%;
+    height: 64px;
+
+    transition: .2s linear;
+
+    background: #fcfcfe;
+    box-shadow: 0 2px 3px rgba(195, 215, 233, .3);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.course_form .program .add_lesson_btn .icon
+{
+    display: block;
+
+    width: 22px;
+    height: 16px;
+    margin-right: 13px;
+
+    transition: fill .2s linear;
+
+    fill: #7a76ff;
+}
+
+
+
+.course_form .add_btn
+{
+    margin-top: 24px;
+}
+
+
+
+.course_form .delete_course
+{
+    margin-top: 40px;
+}
+
+.course_form .delete_course button
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    line-height: 20px;
+
+    display: flex;
+
+    transition: color .2s linear;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.course_form .delete_course button .icon
+{
+    display: block;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+
+    transition: fill .2s linear;
+
+    fill: #969bb4;
+}
+
+.course_form .delete_course button:hover
+{
+    color: #f55;
+}
+
+.course_form .delete_course button:hover .icon
+{
+    fill: #f55;
+}
+
+
+
+.course_form .fixed_panel
+{
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+
+    width: calc(100% - var(--sidebar_width));
+    padding: 27px 110px 25px 32px;
+
+    background: #fff;
+    box-shadow: 0 -12px 48px rgba(204, 214, 248, .3);
+
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.course_form .fixed_panel .name
+{
+    color: #272443;
+    font-size: 16px;
+    line-height: 20px;
+
+    display: flex;
+
+    width: calc(100% - 252px);
+    margin-right: auto;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.course_form .fixed_panel .name .icon
+{
+    display: block;
+
+    width: 14px;
+    height: 15px;
+    margin-right: 10px;
+
+    fill: #7a76ff;
+}
+
+
+.course_form .fixed_panel .publish_btn
+{
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+
+    display: block;
+
+    width: 220px;
+    height: 48px;
+    min-height: 0;
+    margin-left: 32px;
+    padding: 15px 30px;
+
+    transition: background .2s linear;
+
+    border-radius: 4px;
+    background: #7a76ff;
+}
+
+.course_form .fixed_panel .publish_btn:hover
+{
+    background: #6a66e8;
+}
+
+
+
+.course_form .preloader_wrap
+{
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+    border-radius: inherit;
+    background: rgba(255,255,266,.7);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+@media (max-width: 1439px)
+{
+    /*-----------------
+        Course form
+    -----------------*/
+    .course_form .fixed_panel
+    {
+        padding: 25px 95px 25px 30px;
+    }
+}
+
+
+
+@media (max-width: 1279px)
+{
+    .course_form .description .info
+    {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .course_form
+    {
+        padding-bottom: 140px;
+    }
+
+
+    .course_form .delete_course
+    {
+        margin-top: 32px;
+    }
+
+
+    .course_form .fixed_panel
+    {
+        z-index: 101;
+        bottom: 75px;
+
+        width: 100%;
+        padding: 15px 45px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .course_form
+    {
+        padding-bottom: 108px;
+    }
+
+
+    .course_form .block_title .exp
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+    .course_form .fixed_panel
+    {
+        bottom: 55px;
+
+        padding: 10px 20px;
+    }
+
+    .course_form .fixed_panel .name
+    {
+        display: none;
+    }
+
+    .course_form .fixed_panel .publish_btn
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .course_form .program .add_lesson_btn
+    {
+        font-size: 13px;
+        line-height: 17px;
+
+        height: 56px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .course_form .description
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 20px 20px 0;
+    }
+}

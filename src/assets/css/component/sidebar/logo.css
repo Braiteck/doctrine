@@ -1,0 +1,56 @@
+.sidebar .logo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 88px;
+    padding: 0 24px;
+
+    background: rgba(255, 255, 255, .7);
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.sidebar .logo:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 88px;
+
+    content: '';
+    pointer-events: none;
+
+    background: var(--bg2);
+}
+
+.sidebar .logo img
+{
+    display: block;
+}
+
+.sidebar .logo img.mini
+{
+    display: none;
+}
+
+
+body.mini .sidebar .logo img
+{
+    display: none;
+}
+
+body.mini .sidebar .logo img.mini
+{
+    display: block;
+}

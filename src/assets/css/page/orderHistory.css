@@ -1,0 +1,517 @@
+/*------------------
+    Transactions
+------------------*/
+.transactions .block_head .icon
+{
+    position: relative;
+    top: -1px;
+
+    width: 20px;
+    height: 18px;
+}
+
+
+
+.transactions .data
+{
+    padding: 8px;
+
+    border: 1px solid #e2e1f4;
+    border-radius: 8px;
+    background: #fff;
+}
+
+
+.transactions .titles
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-bottom: 8px;
+
+    border-radius: 8px;
+    background: #f9f9fc;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.transactions .titles > *
+{
+    width: 12.5%;
+    padding: 14px;
+}
+
+.transactions .titles > * + *
+{
+    padding-left: 0;
+}
+
+
+.transactions .list > * + *
+{
+    margin-top: 8px;
+}
+
+
+.transactions .transaction
+{
+    color: var(--text_color);
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    transition: .2s linear;
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.transactions .transaction:nth-child(even)
+{
+    background: #f9f9fc;
+}
+
+.transactions .transaction > *
+{
+    width: 12.5%;
+    padding: 14px;
+}
+
+.transactions .transaction > * + *
+{
+    padding-left: 0;
+}
+
+
+.transactions .transaction .col_price
+{
+    white-space: nowrap;
+}
+
+.transactions .transaction .col_status
+{
+    color: #7a76ff;
+
+    white-space: nowrap;
+}
+
+.transactions .transaction .col_status .success
+{
+    color: #83bd55;
+}
+
+.transactions .transaction .col_status .error
+{
+    color: #bd5555;
+}
+
+.transactions .transaction .col_date
+{
+    color: #6c6f84;
+
+    white-space: nowrap;
+}
+
+
+
+.transactions .mob_list
+{
+    display: none;
+}
+
+.transactions .mob_list .transaction
+{
+    display: block;
+
+    padding: 0;
+
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.transactions .mob_list .transaction + .transaction
+{
+    margin-top: 0;
+
+    border-top: 1px solid #f6f6fb;
+}
+
+.transactions .mob_list .transaction:nth-child(even)
+{
+    background: none;
+}
+
+.transactions .mob_list .transaction > *
+{
+    width: 100%;
+}
+
+.transactions .mob_list .transaction .head
+{
+    padding-left: 52px;
+}
+
+.transactions .mob_list .transaction .head:before
+{
+    display: none;
+}
+
+.transactions .mob_list .transaction .head .icon
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 18px;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin: auto;
+
+    fill: #969bb4;
+}
+
+.transactions .mob_list .transaction .head .icon.check
+{
+    width: 17px;
+    height: 12px;
+
+    fill: #7a76ff;
+}
+
+.transactions .mob_list .transaction .hide
+{
+    display: none;
+
+    padding: 18px;
+
+    border: none;
+    border-top: 1px solid #f6f6fb;
+    border-radius: 0;
+    background: none;
+}
+
+.transactions .mob_list .transaction .features > *
+{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.transactions .mob_list .transaction .features > * + *
+{
+    margin-top: 16px;
+}
+
+.transactions .mob_list .transaction .features .name
+{
+    color: #969bb4;
+}
+
+.transactions .mob_list .transaction .features .val
+{
+    text-align: right;
+}
+
+.transactions .mob_list .transaction .features .status
+{
+    color: #7a76ff;
+
+    white-space: nowrap;
+}
+
+.transactions .mob_list .transaction .features .status .success
+{
+    color: #83bd55;
+}
+
+.transactions .mob_list .transaction .features .status .error
+{
+    color: #bd5555;
+}
+
+
+
+.transactions .bottom
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 24px;
+    padding: 0 14px 12px;
+
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.transactions .bottom .shown
+{
+    margin-right: auto;
+}
+
+.transactions .bottom .shown span
+{
+    color: var(--text_color);
+}
+
+
+.transactions .bottom .go_to
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.transactions .bottom .go_to .input
+{
+    color: var(--text_color);
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+
+    display: block;
+
+    width: 32px;
+    height: 28px;
+    margin: 0 7px;
+
+    text-align: center;
+
+    border: 1px solid #e2e1f4;
+    border-radius: 4px;
+    background: none;
+}
+
+
+.transactions .bottom .prev,
+.transactions .bottom .next
+{
+    position: relative;
+
+    display: block;
+
+    width: 36px;
+    height: 28px;
+    margin-left: 21px;
+
+    transition: opacity .2s linear;
+
+    opacity: .65;
+    border-radius: 4px;
+    background: #f9f9fc;
+}
+
+.transactions .bottom .prev + .next
+{
+    margin-left: 4px;
+}
+
+.transactions .bottom .prev:after,
+.transactions .bottom .next:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 3px;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-top: 2px solid #969bb4;
+    border-left: 2px solid #969bb4;
+}
+
+.transactions .bottom .next:after
+{
+    left: -3px;
+
+    transform: rotate(-225deg);
+}
+
+.transactions .bottom .prev:hover,
+.transactions .bottom .next:hover
+{
+    opacity: 1;
+}
+
+
+
+@media (max-width: 1279px)
+{
+    .transactions .data
+    {
+        padding: 0;
+    }
+
+    .transactions .titles,
+    .transactions .list
+    {
+        display: none;
+    }
+
+    .transactions .mob_list
+    {
+        display: block;
+    }
+
+
+    .transactions .bottom
+    {
+        margin: 0;
+        padding: 18px;
+
+        border-top: 1px solid #f6f6fb;
+    }
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .transactions .bottom .shown
+    {
+        width: 100%;
+        margin-top: 15px;
+
+        text-align: center;
+
+        order: 3;
+    }
+
+
+    .transactions .bottom .go_to
+    {
+        margin: 0 auto;
+
+        order: 2;
+    }
+
+    .transactions .bottom .go_to .input
+    {
+        margin: 0 12px;
+    }
+
+
+    .transactions .bottom .prev
+    {
+        width: 64px;
+        height: 50px;
+        margin: 0;
+
+        order: 1;
+    }
+
+    .transactions .bottom .next
+    {
+        width: 64px;
+        height: 50px;
+        margin: 0;
+
+        order: 2;
+    }
+
+    .transactions .bottom .prev:after,
+    .transactions .bottom .next:after
+    {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .transactions .bottom .shown
+    {
+        font-size: 12px;
+        line-height: 16px;
+
+        margin-top: 18px;
+    }
+
+
+    .transactions .bottom .go_to
+    {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .transactions .bottom .go_to .input
+    {
+        font-size: 12px;
+
+        width: 49px;
+        height: 28px;
+        margin: 0 10px;
+    }
+
+
+    .transactions .bottom .prev
+    {
+        width: 36px;
+        height: 28px;
+        margin: 0;
+
+        order: 1;
+    }
+
+    .transactions .bottom .next
+    {
+        width: 36px;
+        height: 28px;
+        margin: 0;
+
+        order: 2;
+    }
+
+    .transactions .bottom .prev:after,
+    .transactions .bottom .next:after
+    {
+        width: 8px;
+        height: 8px;
+    }
+}

@@ -1,0 +1,174 @@
+.fr-box.fr-basic
+{
+    -webkit-border-radius: var(--form_border_radius);
+       -moz-border-radius: var(--form_border_radius);
+            border-radius: var(--form_border_radius);
+}
+
+
+.fr-toolbar
+{
+    color: #7a76ff;
+    font-family: var(--font_family2);
+    line-height: normal;
+
+    border: 1px solid var(--form_border_color);
+    -webkit-border-radius: var(--form_border_radius);
+       -moz-border-radius: var(--form_border_radius);
+            border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+.fr-toolbar.fr-top
+{
+    -webkit-border-radius: var(--form_border_radius) var(--form_border_radius) 0 0;
+       -moz-border-radius: var(--form_border_radius) var(--form_border_radius) 0 0;
+            border-radius: var(--form_border_radius) var(--form_border_radius) 0 0;
+}
+
+
+.fr-toolbar .fr-btn-grp
+{
+    margin: 0 9px;
+}
+
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn,
+.fr-modal .fr-command.fr-btn
+{
+    color: #272443;
+
+    margin: 0;
+
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.fr-toolbar .fr-command.fr-btn i,
+.fr-toolbar .fr-command.fr-btn svg,
+.fr-popup .fr-command.fr-btn i,
+.fr-popup .fr-command.fr-btn svg,
+.fr-modal .fr-command.fr-btn i,
+.fr-modal .fr-command.fr-btn svg
+{
+    width: 22px;
+    margin: 0 9px;
+}
+
+.fr-toolbar .fr-command.fr-btn svg path,
+.fr-popup .fr-command.fr-btn svg path,
+.fr-modal .fr-command.fr-btn svg path
+{
+    fill: #272443;
+}
+
+
+.fr-toolbar .fr-btn-grp .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path,
+.fr-toolbar .fr-more-toolbar .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path,
+.fr-toolbar .fr-buttons:not(.fr-tabs) .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path,
+.fr-popup .fr-btn-grp .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path,
+.fr-popup .fr-more-toolbar .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path,
+.fr-popup .fr-buttons:not(.fr-tabs) .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path,
+.fr-modal .fr-btn-grp .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path,
+.fr-modal .fr-more-toolbar .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path,
+.fr-modal .fr-buttons:not(.fr-tabs) .fr-command.fr-btn.fr-active:not(.fr-dropdown) svg path
+{
+    fill: #7a76ff !important;
+}
+
+
+.fr-toolbar .fr-command.fr-btn.fr-open
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.fr-toolbar .fr-more-toolbar.fr-expanded
+{
+    height: 40px;
+}
+
+
+.fr-wrapper .fr-placeholder
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+
+.fr-box.fr-basic .fr-wrapper
+{
+    border: 1px solid var(--form_border_color);
+    border-bottom-color: var(--form_border_color);
+    background: var(--form_bg_color);
+}
+
+.fr-box.fr-basic .fr-wrapper::-webkit-scrollbar
+{
+    width: 5px !important;
+    height: 5px !important;
+}
+
+.fr-box.fr-basic .fr-element
+{
+    color: var(--text_color);
+    font: 600 14px/19px var(--font_family2);
+
+    padding: 18px;
+}
+
+
+.fr-toolbar .fr-newline
+{
+    margin-right: 0;
+    margin-left: 0;
+
+    background: var(--form_border_color);
+}
+
+
+.fr-second-toolbar
+{
+    line-height: normal;
+
+    min-height: 40px;
+
+    border: 1px solid var(--form_border_color);
+    border-top: 0;
+    -webkit-border-radius: 0 0 var(--form_border_radius) var(--form_border_radius);
+       -moz-border-radius: 0 0 var(--form_border_radius) var(--form_border_radius);
+            border-radius: 0 0 var(--form_border_radius) var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+
+.fr-box .fr-counter
+{
+    color: var(--text_color);
+    font: 13px/19px var(--font_family2);
+
+    content: attr(data-chars);
+
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+
+
+
+@media (max-width: 479px)
+{
+    .fr-toolbar .fr-command.fr-btn i,
+    .fr-toolbar .fr-command.fr-btn svg,
+    .fr-popup .fr-command.fr-btn i,
+    .fr-popup .fr-command.fr-btn svg,
+    .fr-modal .fr-command.fr-btn i,
+    .fr-modal .fr-command.fr-btn svg
+    {
+        margin: 0 8px;
+    }
+}

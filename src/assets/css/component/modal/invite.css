@@ -1,0 +1,55 @@
+#invite_success_modal
+{
+    padding: 40px 32px 24px;
+
+    text-align: center;
+}
+
+
+#invite_success_modal .icon
+{
+    margin-bottom: 18px;
+}
+
+#invite_success_modal .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+#invite_success_modal .title
+{
+    font-size: 18px;
+    line-height: 18px;
+}
+
+
+#invite_success_modal .close_btn
+{
+    color: #7a76ff;
+    font-size: 13px;
+    line-height: 13px;
+
+    display: inline-block;
+
+    width: 180px;
+    height: 48px;
+    margin-top: 28px;
+
+    transition: .2s linear;
+    vertical-align: top;
+
+    border: 1px solid rgba(122, 118, 255, .3);
+    border-radius: 4px;
+}
+
+#invite_success_modal .close_btn:hover
+{
+    color: #fff;
+
+    border-color: #7a76ff;
+    background: #7a76ff;
+}

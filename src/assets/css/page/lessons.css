@@ -1,0 +1,54 @@
+/*-------------
+    Lessons
+-------------*/
+.lessons .block_head .icon
+{
+    width: 20px;
+    height: 20px;
+}
+
+
+.lessons .list .lesson + .lesson
+{
+    margin-top: 24px;
+}
+
+
+
+@media (max-width: 1279px)
+{
+    .lessons .list
+    {
+        display: flex;
+
+        margin-bottom: -24px;
+        margin-left: -24px;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .lessons .list .lesson
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+    .lessons .list .lesson + .lesson
+    {
+        margin-top: 0;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .lessons .list .lesson
+    {
+        width: calc(100% - 24px);
+    }
+}

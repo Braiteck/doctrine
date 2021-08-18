@@ -1,0 +1,31 @@
+.top_panel .logo
+{
+    display: none;
+
+    margin-right: auto;
+}
+
+.top_panel .logo img
+{
+    display: block;
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .top_panel .logo
+    {
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .top_panel .logo img
+    {
+        width: 110px;
+    }
+}

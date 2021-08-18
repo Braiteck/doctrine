@@ -1,0 +1,153 @@
+/*---------------
+    Mob notes
+---------------*/
+.mob_notes .back_link
+{
+    margin-bottom: 24px;
+}
+
+
+.mob_notes .back_link a
+{
+    color: currentColor;
+    font-size: 24px;
+    line-height: 32px;
+
+    position: relative;
+
+    display: block;
+
+    padding-left: 48px;
+
+    text-decoration: none;
+}
+
+
+.mob_notes .back_link .icon
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2px;
+
+    display: block;
+
+    width: 23px;
+    height: 3px;
+    margin: auto;
+
+    background: #969bb4;
+}
+
+.mob_notes .back_link .icon:after
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 11px;
+    height: 11px;
+    margin: auto;
+
+    content: '';
+    transition: border-color .2s linear;
+    transform: rotate(-45deg);
+
+    border-top: 3px solid #969bb4;
+    border-left: 3px solid #969bb4;
+}
+
+
+.mob_notes .list
+{
+    overflow: visible;
+
+    padding: 24px 30px;
+
+    background: #fcfcfe;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+
+.mob_notes .list .load_more
+{
+    margin-top: 24px;
+    padding: 0;
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .mob_notes .list
+    {
+        width: calc(100% + 90px);
+        margin-right: -45px;
+        margin-left: -45px;
+        padding: 24px 45px;
+    }
+}
+
+
+@media (max-width: 767px)
+{
+    .mob_notes .back_link a
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .mob_notes .list
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 20px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .mob_notes .back_link a
+    {
+        color: #969bb4;
+        font-family: var(--font_family2);
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 19px;
+
+        padding-left: 38px;
+    }
+
+
+    .mob_notes .back_link .icon
+    {
+        left: 1px;
+
+        width: 18px;
+        height: 2px;
+    }
+
+    .mob_notes .back_link .icon:after
+    {
+        width: 8px;
+        height: 8px;
+
+        border-width: 2px;
+    }
+
+
+    .mob_notes .list
+    {
+        padding: 20px 20px 0;
+
+        background: none;
+        box-shadow: 0 -2px 2px rgba(195, 215, 233, .3);
+    }
+}

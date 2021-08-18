@@ -1,0 +1,66 @@
+/*---------------
+    Top panel
+---------------*/
+.top_panel
+{
+    position: relative;
+    z-index: 100;
+
+    width: calc(100% - var(--sidebar_width));
+    min-height: 88px;
+    margin-left: var(--sidebar_width);
+    padding: 20px 70px 20px 0;
+
+    background: rgba(255, 255, 255, .7);
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+@media (max-width: 1439px)
+{
+    .top_panel
+    {
+        padding-right: 30px;
+    }
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .top_panel
+    {
+        width: 100%;
+        min-height: 0;
+        margin-bottom: 48px;
+        margin-left: 0;
+        padding: 20px 45px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .top_panel
+    {
+        margin-bottom: 40px;
+        padding: 16px 20px;
+    }
+}
+
+
+
+@media (max-width: 479px)
+{
+    .top_panel
+    {
+        margin-bottom: 32px;
+
+        background: #fff;
+    }
+}

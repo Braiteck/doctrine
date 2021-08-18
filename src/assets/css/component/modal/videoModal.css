@@ -1,0 +1,14 @@
+.video_modal
+{
+    width: 100% !important;
+}
+
+.video_modal .video_wrap
+{
+    margin-bottom: 0 !important;
+}
+
+.video_modal .video
+{
+    width: 100% !important;
+}

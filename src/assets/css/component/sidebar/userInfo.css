@@ -1,0 +1,228 @@
+.sidebar .user_info
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 0 17px 32px 16px;
+
+    transition: padding .2s linear;
+}
+
+
+
+.sidebar .user_info .user
+{
+    color: var(--text_color);
+
+    position: relative;
+
+    display: flex;
+
+    min-height: 92px;
+    padding: 24px 20px 20px 20px;
+
+    transition: .2s linear;
+    text-decoration: none;
+
+    border-radius: 12px;
+    background: #f9f9fc;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.sidebar .user_info .user .avatar
+{
+    position: relative;
+
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.sidebar .user_info .user .avatar img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.sidebar .user_info .user .avatar .icon
+{
+    position: absolute;
+    right: 1px;
+    bottom: -3px;
+
+    display: flex;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+    background: #7a76ff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.sidebar .user_info .user .avatar .icon > *
+{
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    fill: #fff;
+}
+
+
+.sidebar .user_info .user .info
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 84px;
+
+    width: calc(100% - 104px);
+    height: 33px;
+    margin: auto;
+}
+
+.sidebar .user_info .user .name
+{
+    font-size: 14px;
+    line-height: 14px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sidebar .user_info .user .email
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    overflow: hidden;
+
+    margin-top: 3px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.sidebar .user_info .logout
+{
+    color: #b4b8cf;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+
+    transition: color .2s linear;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.sidebar .user_info .logout .icon
+{
+    display: block;
+
+    width: 15px;
+    height: 14px;
+    margin-right: 7px;
+
+    fill: currentColor;
+}
+
+.sidebar .user_info .logout:hover
+{
+    color: #6c6f84;
+}
+
+
+
+body.mini .sidebar .user_info
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+body.mini .sidebar .user_info .user
+{
+    border-radius: 0;
+    background: none;
+
+    justify-content: center;
+}
+
+body.mini .sidebar .user_info .user .info
+{
+    display: none;
+}
+
+
+body.mini .sidebar .user_info .logout
+{
+    margin-top: 4px;
+}
+
+body.mini .sidebar .user_info .logout .icon
+{
+    margin: 0;
+}
+
+body.mini .sidebar .user_info .logout span
+{
+    display: none;
+}
+
+
+
+@media (max-width: 1439px)
+{
+    .sidebar .user_info
+    {
+        padding-bottom: 25px;
+    }
+
+    .sidebar .user_info .user
+    {
+        min-height: 88px;
+        padding: 20px;
+    }
+
+
+    .sidebar .user_info .logout
+    {
+        margin-top: 20px;
+    }
+}

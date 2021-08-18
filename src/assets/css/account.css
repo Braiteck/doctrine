@@ -1,0 +1,177 @@
+.content_flex.row
+{
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.content_flex .content
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - var(--sidebar_width));
+
+    transition: width .2s linear;
+}
+
+.content_flex .content > :first-child
+{
+    margin-top: 0;
+}
+
+.content_flex .content > :last-child
+{
+    margin-bottom: 0;
+}
+
+.content_flex .page_content
+{
+    padding: 36px 70px 0 36px;
+
+    flex: 1 0 auto;
+}
+
+.content_flex .block
+{
+    margin-bottom: 70px;
+}
+
+
+
+.block
+{
+    margin-bottom: 35px;
+}
+
+
+
+.empty_message
+{
+    padding: 64px;
+
+    text-align: center;
+
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+.empty_message img
+{
+    display: block;
+
+    max-width: 75%;
+    margin: 0 auto 24px;
+}
+
+.empty_message .title
+{
+    color: #272443;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+
+.telegram_fixed
+{
+    position: fixed;
+    z-index: 101;
+    right: 24px;
+    bottom: 26px;
+
+    display: block;
+
+    border-radius: 50%;
+    box-shadow: 0 2px 2px rgba(195, 215, 233, .3);
+}
+
+.telegram_fixed img
+{
+    display: block;
+
+    border-radius: inherit;
+}
+
+
+
+@media (max-width: 1439px)
+{
+    .content_flex .page_content
+    {
+        padding: 30px 30px 0 30px;
+    }
+
+    .content_flex .block
+    {
+        margin-bottom: 60px;
+    }
+}
+
+
+
+@media (max-width: 1023px)
+{
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+    .content_flex .page_content
+    {
+        padding: 0 45px;
+    }
+
+
+    .telegram_fixed
+    {
+        bottom: 100px;
+    }
+
+    .course_form .telegram_fixed
+    {
+        bottom: 175px;
+    }
+}
+
+
+
+@media (max-width: 767px)
+{
+    .content_flex .page_content
+    {
+        padding: 0 20px;
+    }
+
+    .content_flex .block
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .empty_message
+    {
+        padding: 48px 24px;
+    }
+
+    .empty_message .title
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .telegram_fixed
+    {
+        right: 20px;
+        bottom: 75px;
+    }
+
+    .course_form .telegram_fixed
+    {
+        bottom: 143px;
+    }
+}

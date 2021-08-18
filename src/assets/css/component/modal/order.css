@@ -1,0 +1,530 @@
+.order_modal .payment_method .title
+{
+    font-size: 13px;
+    line-height: 13px;
+
+    margin-bottom: 18px;
+}
+
+
+
+.order_modal .tariff
+{
+    position: relative;
+
+    padding: 18px 24px;
+
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(195, 215, 233, .3);
+}
+
+
+.order_modal .tariff > .icon
+{
+    position: absolute;
+    top: 23px;
+    right: 24px;
+
+    display: block;
+
+    width: 36px;
+
+    pointer-events: none;
+}
+
+
+.order_modal .tariff .head
+{
+    margin-bottom: 2px;
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #e9e9fb;
+}
+
+
+.order_modal .tariff .name
+{
+    font-size: 18px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+}
+
+
+.order_modal .tariff .duration
+{
+    color: #272443;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    position: relative;
+
+    margin-top: 6px;
+    padding-left: 20px;
+
+    white-space: nowrap;
+}
+
+.order_modal .tariff .duration .icon
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin: auto;
+
+    fill: #969bb4;
+}
+
+
+.order_modal .tariff .students
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 14px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.order_modal .tariff .students .icon
+{
+    position: relative;
+    top: -1px;
+
+    display: block;
+
+    width: 13px;
+    height: 13px;
+    margin-right: 7px;
+
+    fill: #7a76ff;
+}
+
+
+.order_modal .tariff .memory
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 14px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.order_modal .tariff .memory .icon
+{
+    display: block;
+
+    width: 13px;
+    height: 13px;
+    margin-right: 7px;
+
+    fill: #7a76ff;
+}
+
+
+.order_modal .tariff .chats
+{
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 14px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.order_modal .tariff .chats .icon
+{
+    display: block;
+
+    width: 13px;
+    height: 13px;
+    margin-right: 7px;
+
+    fill: #7a76ff;
+}
+
+
+
+.order_modal .payment_method
+{
+    margin-top: 32px;
+}
+
+.order_modal .payment_method .method + .method
+{
+    margin-top: 12px;
+}
+
+.order_modal .payment_method .method input[type=radio]
+{
+    display: none;
+}
+
+.order_modal .payment_method .method label
+{
+    font-size: 13px;
+    line-height: 13px;
+
+    position: relative;
+
+    display: flex;
+
+    padding: 20px 62px 20px 18px;
+
+    cursor: pointer;
+    transition: .2s linear;
+
+    border: 1px solid #e2e1f4;
+    border-radius: 8px;
+    background: #fff;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.order_modal .payment_method .method label .icon
+{
+    overflow: hidden;
+
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+
+    border-radius: 4px;
+}
+
+.order_modal .payment_method .method label .icon img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 4px;
+
+    object-fit: cover;
+}
+
+.order_modal .payment_method .method label .name
+{
+    width: calc(100% - 38px);
+    margin-left: auto;
+}
+
+.order_modal .payment_method .method label:before
+{
+    position: absolute;
+    top: 0;
+    right: 24px;
+    bottom: 0;
+
+    display: block;
+
+    width: 18px;
+    height: 18px;
+    margin: auto;
+
+    content: '';
+    transition: .2s linear;
+
+    border-radius: 50%;
+    background: #eeedff;
+}
+
+.order_modal .payment_method .method label:after
+{
+    position: absolute;
+    top: 0;
+    right: 29px;
+    bottom: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+    transition: opacity .2s linear;
+
+    opacity: 0;
+    border-radius: 50%;
+    background: #7a76ff;
+}
+
+
+.order_modal .payment_method .method input[type=radio]:checked + label
+{
+    border-color: transparent;
+    border-radius: 8px;
+    background: #f5f5fd;
+    box-shadow: 0 2px 3px rgba(195, 215, 233, .3);
+}
+
+.order_modal .payment_method .method input[type=radio]:checked + label:after
+{
+    opacity: 1;
+}
+
+
+.order_modal .promocode
+{
+    color: #6c6f84;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 18px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.order_modal .promocode .code
+{
+    color: #272443;
+    font-weight: bold;
+
+    padding: 3px 6px;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+    background: #f2f1f8;
+}
+
+
+.order_modal .promocode .form
+{
+    position: relative;
+
+    width: 100%;
+}
+
+.order_modal .promocode .form .input
+{
+    font-size: 12px;
+
+    height: 48px;
+    padding-top: 0;
+    padding-right: 119px;
+    padding-bottom: 0;
+}
+
+.order_modal .promocode .form .btn
+{
+    color: #7a76ff;
+    font-size: 12px;
+    line-height: 12px;
+
+    position: absolute;
+    top: 0;
+    right: 4px;
+    bottom: 0;
+
+    display: block;
+
+    width: 98px;
+    height: 40px;
+    margin: auto;
+
+    transition: .2s linear;
+
+    border-radius: 6px;
+    background: #f2f1ff;
+}
+
+.order_modal .promocode .form .btn:hover
+{
+    color: #fff;
+
+    background: #7a76ff;
+}
+
+.order_modal .promocode .form .btn:disabled
+{
+    pointer-events: none;
+}
+
+
+.order_modal .total_info
+{
+    color: #969bb4;
+    font-family: var(--font_family2);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+
+    position: relative;
+
+    margin: 18px 2px 0;
+    padding: 22px 24px 24px;
+
+    text-align: center;
+
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(195, 215, 233, .3);
+}
+
+.order_modal .total_info:after
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 16px;
+
+    content: '';
+    pointer-events: none;
+
+    background: url(/images/bg_order_total_info.png) 50% 100% repeat-x;
+}
+
+.order_modal .total_info > .price
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 24px;
+    line-height: 24px;
+
+    margin-top: 16px;
+}
+
+.order_modal .total_info > .price .currency
+{
+    font-family: var(--font_family3);
+}
+
+
+.order_modal .total_info .discount
+{
+    color: #6c6f84;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+
+    margin-top: 12px;
+}
+
+.order_modal .total_info .discount .price
+{
+    color: #7a76ff;
+}
+
+.order_modal .total_info .discount .currency
+{
+    font-family: var(--font_family3);
+}
+
+
+.order_modal .submit_btn
+{
+    color: #fff;
+    font-size: 13px;
+    line-height: 13px;
+
+    display: flex;
+
+    width: 100%;
+    min-height: 48px;
+    margin-top: 36px;
+    padding: 12px 24px;
+
+    transition: .2s linear;
+
+    border-radius: 4px;
+    background: #7a76ff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.order_modal .submit_btn .icon
+{
+    display: block;
+
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+
+    fill: #e4e4ff;
+}
+
+.order_modal .submit_btn:hover
+{
+    background: #605ce0;
+    box-shadow: 0 32px 48px rgba(122, 118, 255, .36);
+}
+
+.order_modal .submit_btn:disabled
+{
+    pointer-events: none;
+}
+
+
+.order_modal .preloader_wrap
+{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+
+    border-radius: inherit;
+    background: rgba(255,255,266,.7);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
